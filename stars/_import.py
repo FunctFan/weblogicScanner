@@ -21,3 +21,5 @@ from . import cve_2020_2555
 from . import cve_2020_2883
 from . import cve_2020_14644
 from . import cve_2020_14645 
+from . import cve_2020_14882
+from . import cve_2020_14883
