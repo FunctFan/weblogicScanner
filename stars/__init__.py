@@ -65,10 +65,10 @@ class Star:
                     self.msg_group[code].append('[-][{call}][{target}] Not found.')
             if code == result_code.EXISTS:
                 if self.type == target_type.VULNERABILITY:
-                    self.msg_group[code].append('[+][{call}][{target}] Exists vulnerability!')
+                    self.msg_group[code].append('\033[1;31;43m[+][{call}][{target}] Exists vulnerability!\033[0m')
                 elif self.type == target_type.MODULE:
-                    self.msg_group[code].append('[+][{call}][{target}] Found module!')
-                    self.msg_group[code].append('[*][{call}][{target}] Please verify manually!')
+                    self.msg_group[code].append('\033[1;31;43m[+][{call}][{target}] Found module!\033[0m')
+                    self.msg_group[code].append('\033[1;31;43m[*][{call}][{target}] Please verify manually!\033[0m')
             if code == result_code.TIMEOUT:
                 self.msg_group[code].append('[!][{call}][{target}] Timeout.')
             if code == result_code.ERROR:
